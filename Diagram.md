@@ -64,38 +64,38 @@ El objetivo es que esta base soporte luego los agentes de inversión y FI sin re
 flowchart LR
     %% Frontend
     subgraph Frontend
-        UI[Web App<br/>Next.js/React]
+        UI["Web App (Next.js/React)"]
     end
 
     %% Backend API
     subgraph Backend
-        API[Backend API<br/>(FastAPI/Node)]
-        ORCH[Agentic Orchestrator<br/>FINANCIERO PRO Agent]
+        API["Backend API (FastAPI/Node)"]
+        ORCH["Agentic Orchestrator - FINANCIERO PRO Agent"]
 
         subgraph Ingestion
-            UP[File Upload Service]
-            S3[(S3<br/>raw_statements)]
-            ING[Lambda/Worker<br/>Ingestion & Parsing]
+            UP["File Upload Service"]
+            S3[("S3 raw_statements")]
+            ING["Lambda/Worker - Ingestion & Parsing"]
         end
 
         subgraph DataLayer
-            DB[(PostgreSQL<br/>Core Financial DB)]
-            VS[(Vector Store<br/>(Futuro))]
+            DB[("PostgreSQL - Core Financial DB")]
+            VS["Vector Store (Futuro)"]
         end
 
         subgraph Analytics
-            CAT[Categorization Engine<br/>(Rules + LLM)]
-            ANA[Spending Analytics<br/>(MVP)]
-            PORT[Portfolio Engine<br/>(Futuro)]
-            FI[FI Planner Engine<br/>(Futuro)]
+            CAT["Categorization Engine (Rules + LLM)"]
+            ANA["Spending Analytics (MVP)"]
+            PORT["Portfolio Engine (Futuro)"]
+            FI["FI Planner Engine (Futuro)"]
         end
 
         subgraph Output
-            PDF[Report Service<br/>(PDF Generator - Futuro)]
-            NOTIF[Notification Service<br/>(Email/Push)]
+            PDF["Report Service (PDF Generator - Futuro)"]
+            NOTIF["Notification Service (Email/Push)"]
         end
 
-        SCHED[Scheduler<br/>(cron/EventBridge/n8n)]
+        SCHED["Scheduler (cron / EventBridge / n8n)"]
     end
 
     %% Flujos principales
