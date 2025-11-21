@@ -250,6 +250,7 @@ Backend genera:
 ```bash
 git clone git@github.com:tu-org/financiero-api.git
 git clone git@github.com:tu-org/financiero-web.git
+```
 
 Configurar `.env` en ambos proyectos.
 
@@ -263,6 +264,7 @@ docker run --name financiero-db \
   -e POSTGRES_DB=financiero \
   -p 5432:5432 \
   -d postgres
+```
 
 ### Correr backend & frontend
 
@@ -275,6 +277,7 @@ uvicorn app.main:app --reload   # FastAPI ejemplo
 cd ../financiero-web
 npm install
 npm run dev
+```
 
 # 📈 Roadmap (Future Phases)
 
