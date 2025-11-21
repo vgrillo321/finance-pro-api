@@ -162,7 +162,7 @@ Tablas:
   "description": "POS Transaction",
   "raw_source": "Chase"
 }
-
+```
 - [ ] Inserción masiva en `transactions`
 
 ### Frontend
