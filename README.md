@@ -16,7 +16,7 @@ Este README documenta **todo lo necesario para construir la Fase 1 (MVP – Book
 # 🧠 En Fase 1 (MVP) realmente vas a usar:
 
 - **UI** (Web App – Next.js)
-- **API** (Backend – FastAPI/Nest)
+- **API** (Backend – FastAPI)
 - **UP, S3, ING** (Ingesta básica)
 - **DB** (PostgreSQL)
 - **CAT** (Categorization Engine v1 – reglas)
@@ -117,7 +117,7 @@ Un sistema funcional donde puedas:
 
 ### Infraestructura & Setup
 - [✅] Crear repos: `financiero-api`, `financiero-web`
-- [✅ ] Configurar entorno backend (FastAPI / NestJS)
+- [✅ ] Configurar entorno backend (FastAPI)
 - [ ] Configurar entorno frontend (Next.js)
 - [ ] Configurar PostgreSQL (local o docker)
 - [ ] Añadir migraciones iniciales
