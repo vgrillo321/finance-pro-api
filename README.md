@@ -116,8 +116,8 @@ Un sistema funcional donde puedas:
 ## 🟦 Semana 1 — Fundaciones
 
 ### Infraestructura & Setup
-- [ ] Crear repos: `financiero-api`, `financiero-web`
-- [ ] Configurar entorno backend (FastAPI / NestJS)
+- [✅] Crear repos: `financiero-api`, `financiero-web`
+- [✅ ] Configurar entorno backend (FastAPI / NestJS)
 - [ ] Configurar entorno frontend (Next.js)
 - [ ] Configurar PostgreSQL (local o docker)
 - [ ] Añadir migraciones iniciales
