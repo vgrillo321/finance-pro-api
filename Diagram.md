@@ -116,3 +116,4 @@ flowchart LR
 
     SCHED --> ORCH
     UI -->|Dashboards & Queries| API --> DB
+```
