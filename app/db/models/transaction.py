@@ -13,8 +13,9 @@ class Transaction(Base):
     id = Column(Integer, primary_key=True, index=True)
     amount = Column(Numeric(12, 2), nullable=False)
     currency = Column(String(10), default="USD", nullable=False)
+    vendor = Column(String(255), nullable=True)
     description = Column(String(255), nullable=True)
-
+    
     timestamp = Column(DateTime, default=datetime.utcnow, nullable=False)
 
     # FKs
